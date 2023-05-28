@@ -27,22 +27,22 @@ http://localhost:8080
 
 #### Get the current BTC to UAH exchange rate
 
-```http
+```bash
   GET /rate
 ```
 
 #### Subscribe an email address to receive the current exchange rate.
 
-```http
+```bash
   POST /subscribe
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `email`   | `string` | **Required**. Email to subscribe  |
+| `email`   | `string` | Email to subscribe                |
 
 ####  Send an email with the current exchange rate to all subscribed email addresses.
 
-```http
+```bash
   POST /sendEmails
 ```
